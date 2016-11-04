@@ -132,11 +132,6 @@ public class MainActivity extends AppCompatActivity {
                 long dif = gt - lm;
                 int sevday = 604800000; // Configuration pour 7 jours (nombre de millisecondes en 7jours = 7*24*60*60*1000)
 
-
-                Log.e("DIFF", "" +lm);
-                Log.e("DIFF", "" +gt);
-                Log.e("DIFF", "" +dif);
-
                 // On appele la classe new URL en fonction de l'URL rentrée
                 URL u = null;
                 try {
@@ -293,7 +288,6 @@ public class MainActivity extends AppCompatActivity {
                     isw = new FileOutputStream(f);
                     OutputStreamWriter isrw = new OutputStreamWriter(isw); // va permettre au Buffer de lire (il traduit)
                     BufferedWriter brw = new BufferedWriter(isrw); // Je vais le lire
-                    Log.e("ERREUR", s);
 
                     try {
                         brw.write(s);// je vais lire telle ligne traduit des octets en chaine de caractères
